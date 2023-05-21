@@ -19,7 +19,7 @@ server.properties에서 리소스팩을 설정하면 ``/setdefaultresourcepack``
 * target: 리소스팩을 업데이트할 대상 플레이어
 * url: 리소스팩 다운로드 링크   
   * default: 현재 기본으로 설정된 리소스팩(서버에 설정된 리소스팩이나 마지막으로 setdefaultresourcepack로 설정한 리소스팩)(기본값)
-* sha1: 리소스팩의 sha1해쉬
+* sha1: 리소스팩의 [SHA1해쉬](https://emn178.github.io/online-tools/sha1_checksum.html)
   * none: 모르면 이거로 하기(기본값)
 * force: 리소스팩 강제적용(플레이어가 적용을 거부하면 킥당함)
   * true: 강제로 설정하게 함(기본값)
@@ -39,7 +39,7 @@ server.properties에서 리소스팩을 설정하면 ``/setdefaultresourcepack``
 서버를 재시작하면 설정이 사라짐   
 * url: 리소스팩 다운로드 링크   
   * default: 현재 기본으로 설정된 리소스팩(서버에 설정된 리소스팩이나 마지막으로 setdefaultresourcepack로 설정한 리소스팩)(기본값)
-* sha1: 리소스팩의 sha1해쉬
+* sha1: 리소스팩의 [SHA1해쉬](https://emn178.github.io/online-tools/sha1_checksum.html)
   * none: 모르면 이거로 하기(기본값)
 * force: 리소스팩 강제적용(플레이어가 적용을 거부하면 킥당함)
   * true: 강제로 설정하게 함(기본값)
