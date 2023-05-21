@@ -1,0 +1,27 @@
+name: ResourcePackReloader
+version: 1.0
+description: Reload resourcepack no reboot server
+author: 0w0
+
+api-version: 1.19
+main: ai0w0.resourcepackreloader.ResourcePackReloader
+load: STARTUP
+
+commands:
+    packstatus:
+        description: Print resourcepack status
+        usage: /<command>
+        permission: resourcepackreloader.reloadpack
+    packreload:
+        description: Reload resourcepack
+        usage: /<command> <target> [<url|default>] [<sha1|none>] [<force>] [<prompt message>]
+        permission: resourcepackreloader.reloadpack
+    setdefaultresourcepack:
+        description: Set default resourcepack
+        usage: /<command> <url|default> [<sha1|none>] [<force>] [<prompt message>]
+        permission: resourcepackreloader.reloadpack
+
+permissions:
+    resourcepackreloader.*:
+        description: Allows reload command
+        default: op
