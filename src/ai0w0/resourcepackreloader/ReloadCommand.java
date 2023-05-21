@@ -1,12 +1,6 @@
 package ai0w0.resourcepackreloader;
 
 import java.util.ArrayList;
-import java.util.Random;
-
-import java.security.MessageDigest;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
 
 import org.bukkit.command.*;
 import org.bukkit.Bukkit;
@@ -97,16 +91,6 @@ public class ReloadCommand implements CommandExecutor
                 target.add(t);
               }
           }
-          
-          /*
-          Random random = new Random();
-          StringBuilder buffer = new StringBuilder(40);
-          String hexMap="0123456789abcdef";
-          for(int i=0;i<40;i++)
-          {
-            buffer.append(hexMap.charAt(random.nextInt(16)));
-          }
-          String fakeSha1 = buffer.toString();*/
           
           
         for (Player player : target)
