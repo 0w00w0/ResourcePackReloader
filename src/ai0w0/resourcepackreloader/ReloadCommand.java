@@ -95,7 +95,7 @@ public class ReloadCommand implements CommandExecutor
           
         for (Player player : target)
         {
-          player.setResourcePack(url,null,promptMessage,force);
+          player.setResourcePack(url,plugin.hexStringToByteArray(sha1),promptMessage,force);
         }
         
         

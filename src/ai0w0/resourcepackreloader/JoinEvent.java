@@ -13,7 +13,7 @@ public class JoinEvent implements Listener
     {
       if(plugin.defaultPack!=null&&plugin.isForce!=null)
       {
-        event.getPlayer().setResourcePack(plugin.defaultPack,null,plugin.promptMessage,plugin.isForce);
+        event.getPlayer().setResourcePack(plugin.defaultPack,plugin.hexStringToByteArray(plugin.packSha1),plugin.promptMessage,plugin.isForce);
       }
     }
 }

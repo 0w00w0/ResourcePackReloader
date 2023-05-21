@@ -15,6 +15,17 @@ public final class ResourcePackReloader extends JavaPlugin
     public static Boolean isForce=null;
     public static String promptMessage=null;
     
+    public static byte[] hexStringToByteArray(String s) {
+        s=s.toUpperCase();
+        int len = s.length();
+        byte[] data = new byte[len / 2];
+        for (int i = 0; i < len; i += 2) {
+            data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4)
+                                 + Character.digit(s.charAt(i+1), 16));
+        }
+        return data;
+    }
+    
     public void onLoad()
     {
         plugin=this;
